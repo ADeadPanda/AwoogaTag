@@ -1,0 +1,13 @@
+name: AwoogaTag
+version: '${project.version}'
+main: me.adeadpanda.AwoogaTag
+api-version: 1.19
+authors: [ ADeadPanda ]
+description: Tag your it
+website: https://www.AwoogaCraft.com
+
+commands:
+  tag:
+    description: Starts / Stops a game of tag!
+    aliases: AwoogaTag
+    usage: /<command> [set username | clear]
