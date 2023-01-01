@@ -27,7 +27,7 @@ public class HitEvent implements Listener {
         if (event.getDamager() instanceof Player && event.getEntity() instanceof Player) {
             Player attacker = ((Player) event.getDamager()).getPlayer();
             Player victim = (Player) event.getEntity();
-            if (attacker.getInventory().getItemInMainHand().getType().equals(Material.ARROW) && attacker.getInventory().getItemInMainHand().containsEnchantment(Enchantment.LUCK) && attacker.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.YELLOW + "" + ChatColor.BOLD + "Cheese Touch")) {
+            if (attacker.getInventory().getItemInMainHand().containsEnchantment(Enchantment.LUCK) && attacker.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.YELLOW + "" + ChatColor.BOLD + "Cheese Touch")) {
                 if (map.containsKey(victim.getUniqueId())) {
                     event.setCancelled(true);
                     return;
