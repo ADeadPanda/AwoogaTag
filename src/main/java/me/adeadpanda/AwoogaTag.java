@@ -1,5 +1,8 @@
 package me.adeadpanda;
 
+import me.adeadpanda.Events.DropArrowEvent;
+import me.adeadpanda.Events.HitEvent;
+import me.adeadpanda.Events.StoreArrowEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;

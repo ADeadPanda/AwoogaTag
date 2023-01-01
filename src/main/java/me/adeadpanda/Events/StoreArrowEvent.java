@@ -1,5 +1,6 @@
-package me.adeadpanda;
+package me.adeadpanda.Events;
 
+import me.adeadpanda.AwoogaTag;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

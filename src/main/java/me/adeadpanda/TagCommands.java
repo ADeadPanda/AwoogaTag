@@ -19,6 +19,7 @@ public class TagCommands implements CommandExecutor {
         if (sender instanceof Player) {
             if (sender.hasPermission("tag.admin")) {
                 if (args[0].equalsIgnoreCase("clear")) {
+                    sender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "Game of Tag ended");
                     Bukkit.getOnlinePlayers().forEach(player -> {
                         if (player.getInventory().contains(instance.createItem())) {
                             player.getInventory().remove(instance.createItem());
@@ -27,6 +28,8 @@ public class TagCommands implements CommandExecutor {
                 }
                 if (args[0].equalsIgnoreCase("set")) {
                     Player target = Bukkit.getPlayer(args[1]);
+                    sender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "Game of Tag ended");
+                    target.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "You were given a Cheese");
                     if (target.getInventory().contains(instance.createItem())) {
                         sender.sendMessage(target.getDisplayName() + ChatColor.GOLD + "" + ChatColor.BOLD + " is Already is it!");
                         return true;
