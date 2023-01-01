@@ -3,6 +3,7 @@ package me.adeadpanda;
 import me.adeadpanda.Events.DropArrowEvent;
 import me.adeadpanda.Events.HitEvent;
 import me.adeadpanda.Events.StoreArrowEvent;
+import me.adeadpanda.Events.blockPlaceEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 public final class AwoogaTag extends JavaPlugin {
 
     HitEvent hitEvent = new HitEvent(this);
+    blockPlaceEvent blockPlaceEvent= new blockPlaceEvent();
     DropArrowEvent dropArrowEvent = new DropArrowEvent(this);
     StoreArrowEvent arrowStoreEvent = new StoreArrowEvent(this);
 
@@ -37,6 +39,7 @@ public final class AwoogaTag extends JavaPlugin {
     public void onEnable() {
         createItem();
         getServer().getPluginManager().registerEvents(hitEvent, this);
+        getServer().getPluginManager().registerEvents(blockPlaceEvent, this);
         getServer().getPluginManager().registerEvents(dropArrowEvent, this);
         getServer().getPluginManager().registerEvents(arrowStoreEvent, this);
         this.getCommand("tag").setExecutor(new TagCommands(this));
