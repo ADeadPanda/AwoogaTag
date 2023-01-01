@@ -18,7 +18,7 @@ public class DropArrowEvent implements Listener {
     @EventHandler
     public void onDropEvent(PlayerDropItemEvent event) {
         if (event.getItemDrop().getItemStack().hasItemMeta()) {
-            if (Objects.requireNonNull(event.getItemDrop().getItemStack().getItemMeta()).getDisplayName().equalsIgnoreCase(ChatColor.RED + "" + ChatColor.ITALIC + "Cupid's Arrow")) {
+            if (Objects.requireNonNull(event.getItemDrop().getItemStack().getItemMeta()).getDisplayName().equalsIgnoreCase(ChatColor.YELLOW + "" + ChatColor.BOLD + "Cheese Touch")) {
                 event.getPlayer().sendMessage(ChatColor.RED + "" + ChatColor.ITALIC + "You may not drop this!");
                 event.getItemDrop().remove();
                 event.getPlayer().getInventory().addItem(instance.createItem());

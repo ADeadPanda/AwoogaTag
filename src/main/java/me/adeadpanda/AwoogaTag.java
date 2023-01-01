@@ -17,9 +17,9 @@ public final class AwoogaTag extends JavaPlugin {
     StoreArrowEvent arrowStoreEvent = new StoreArrowEvent(this);
 
     public ItemStack createItem() {
-        ItemStack item = new ItemStack(Material.ARROW);
+        ItemStack item = new ItemStack(Material.WET_SPONGE);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(ChatColor.RED + "" + ChatColor.ITALIC + "Cupid's Arrow");
+        meta.setDisplayName(ChatColor.YELLOW + "" + ChatColor.BOLD + "Cheese Touch");
         meta.addEnchant(Enchantment.LUCK, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ArrayList<String> lore = new ArrayList<>();
