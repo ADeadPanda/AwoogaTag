@@ -1,0 +1,17 @@
+Item:
+  Material: "tnt"
+  Name: "&c&lTnt-Bash"
+  Lore:
+    - "&f&lTag! you are it."
+    - "&f&lPunch someone with me to tag them!"
+anti-tag-back-time: 20
+Messages:
+  tag-alert: "&f&l%victim%&c was tagged by &f&l%attacker%&c!!!"
+  game-start: "&6&lHay! You are now it. &c&oGo tag someone!"
+  game-over: "&6&lGame of Tag has ended!"
+  no-place-block: "&c&oSorry. You may not place this."
+  no-drop: "&c&oSorry. You may not drop this."
+  no-store: "&c&oSorry. You may not store this."
+  anti-tag-back: "&6&lAnti-Tag back Time Started!"
+  anti-tag-back-over: "&e&lAnti-Tag back time is now up!"
+  no-item-pickup: "&6&lItem pickup temporarily disabled."
