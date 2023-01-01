@@ -21,7 +21,7 @@ public class DropArrowEvent implements Listener {
     public void onDropEvent(PlayerDropItemEvent event) {
         if (event.getItemDrop().getItemStack().hasItemMeta()) {
             if (Objects.requireNonNull(event.getItemDrop().getItemStack().getItemMeta()).getDisplayName().equalsIgnoreCase(ColorUtil.set(instance.getConfig().getString("Item.Name")))) {
-                event.getPlayer().sendMessage(instance.getConfig().getString("Messages.no-drop"));
+                event.getPlayer().sendMessage(ColorUtil.set(instance.getConfig().getString("Messages.no-drop")));
                 event.getItemDrop().remove();
                 event.getPlayer().getInventory().addItem(instance.createItem());
             }

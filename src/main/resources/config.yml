@@ -1,9 +1,7 @@
 Item:
   Material: "tnt"
   Name: "&c&lTnt-Bash"
-  Lore:
-    - "&f&lTag! you are it."
-    - "&f&lPunch someone with me to tag them!"
+  Lore: "&f&lPunch someone with me to tag them!"
 anti-tag-back-time: 20
 Messages:
   tag-alert: "&f&l%victim%&c was tagged by &f&l%attacker%&c!!!"

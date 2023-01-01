@@ -31,7 +31,7 @@ public final class AwoogaTag extends JavaPlugin {
         meta.addEnchant(Enchantment.LUCK, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         ArrayList<String> lore = new ArrayList<>();
-        lore.addAll(this.getConfig().getStringList("Item.Lore"));
+        lore.add(ColorUtil.set(this.getConfig().getString("Item.Lore")));
         meta.setLore(lore);
         item.setItemMeta(meta);
         return item;
